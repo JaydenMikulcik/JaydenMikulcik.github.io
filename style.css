@@ -23,6 +23,12 @@ span.topStyle {
   width: 100%;
 }
 
+@media only screen and (max-width: 900px) {
+  .parallel {
+    flex-direction: column;
+  }
+}
+
 .imageCircle {
   border-radius: 50%;
   border: 4px;
@@ -67,9 +73,11 @@ span.topStyle {
   color: grey;
 }
 
-.vl {
-  border-left: 3px solid rgb(68, 94, 199);
-  height: 600px;
+@media only screen and (min-width: 900px) {
+  .vl {
+    border-left: 3px solid rgb(68, 94, 199);
+    height: 600px;
+  }
 }
 
 .tableStyle {
